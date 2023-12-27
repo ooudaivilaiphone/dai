@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeeYang</title>
+</head>
+
+<style>
+    #box{
+    width:100px;
+    height:100px;
+    background-color:red;
+    /*transition:0.5s all;*/
+    position:absolute;
+    top:0;
+    left:0;
+
+}
+
+#box:hover{
+    background-color:blue;
+    border-radius:30px;
+    rotate:45deg;
+}
+</style>
+<body>
+    Friends
+    <button id="login" onclick="handleLogin()">LOGOUT</button>
+    <div id="box"></div>
+    <button onclick="move('left')">Left</button>
+    <button onclick="move('right')">Right</button>
+    <button onclick="move('up')">Up</button>
+    <button onclick="move('down')">Down</button>
+
+     <script src="gg.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+</html>
